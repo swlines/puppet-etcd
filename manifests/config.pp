@@ -1,7 +1,7 @@
 # == Class: etcd::config
 #
 class etcd::config {
-  if $::osfamily == 'Ubuntu' {
+  if $::osfamily == 'Debian' {
     file { '/etc/etcd':
       ensure => 'directory',
       owner  => 'etcd',
